@@ -5,13 +5,13 @@ class ActorCritic(nn.Module):
         super(ActorCritic, self).__init__()
         self.actor = nn.Sequential(
             nn.Linear(input_dim, 64),
-            nn.ReLU(),
+            # nn.ReLU(),
             nn.Linear(64, output_dim),
             nn.Softmax(dim=-1)
         )
         self.critic = nn.Sequential(
             nn.Linear(input_dim, 64),
-            nn.ReLU(),
+            # nn.ReLU(),
             nn.Linear(64, 1)
         )
 
