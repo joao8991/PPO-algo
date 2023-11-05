@@ -19,6 +19,3 @@ def test_policy_output_sum_is_1():
     policy,_ = actor_critic.forward(state)
 
     assert sum(policy) == 1
-
-
-test_actor_output_shape()
