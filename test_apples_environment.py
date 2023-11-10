@@ -1,9 +1,9 @@
 import pytest
-from environment import SimpleEnvironment
+from environments.apples.environment_apples import AppleEnvironment
 
 @pytest.fixture
 def environment():
-    return SimpleEnvironment(apples_positions=[[0,1], [4,2], [8,8]])
+    return AppleEnvironment(apples_positions=[[0,1], [4,2], [8,8]])
 
 def test_initial_state(environment):
     assert environment.player_pos == [0, 0]

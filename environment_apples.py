@@ -1,6 +1,6 @@
 import random
 
-class SimpleEnvironment:
+class AppleEnvironment:
     def __init__(self, board_size=12, apples_positions = None):
         self.board_size = board_size
         self.player_pos = [0, 0]  # Initial player position
